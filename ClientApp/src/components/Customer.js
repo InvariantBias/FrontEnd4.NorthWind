@@ -54,7 +54,7 @@ export class Customer extends Component {
   // const response = await fetch('https://localhost:7260/api/Customers');
   //  const response = await fetch('192.168.200.117:4440/api/customers');
     async populateCustomerData() {
-        const response = await fetch('192.168.200.117:4440/api/customers');
+        const response = await fetch('192.168.200.117:3440/api/customers');
       const data = await response.json();
       this.setState({ customers: data, loading: false });
   }
